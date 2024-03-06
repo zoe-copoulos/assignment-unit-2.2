@@ -11,8 +11,8 @@
 // DESCRIPTION:
 // We make a variable called number and set it to 1 as a number.
 // Then we increment the number variable. Number is now 2.
-// We check if number is greater than or equal to 2. 2 is equal to 2, if
-// it is, we console.log 'yes'.
+// We check if number is greater than or equal to 2. If it is,
+// 'yes' will be console.logged.
 // OUTCOME:
 // 'yes' is what is logged.
 
