@@ -33,15 +33,15 @@ if (number >= 2) {
 
 // 1.
 // DESCRIPTION
-// 
-// 
-//
+// We make a variable called name and set it to Dane as a string
+// Then we make a condition where if name is the same as Mary, console will log 'Hi, Mary!' as a string
+// If name is not the same as Mary, console will log 'How do you do?' as a string
 //
 //
 //
 //
 // OUTCOME:
-//
+// 'How do you do?' is logged.
 
 // CODE:
 /*
@@ -59,12 +59,12 @@ if (name === 'Mary') {
 
 // 2.
 // DESCRIPTION:
-// 
-// 
-// 
-//
+//  made a variable called secret but did not assing it a value
+// made a variable called code and assigned it 123 as a number
+// made a condition where if code is equal to 123, secret is assigned 'super' as a string and code is reassigned as 123 x 2, aka 246
+// made a condition where if code's value is greater then 250, secret is assigned 'duper' as a string
 // OUTCOME:
-//
+// 'super' is what is logged
 
 // CODE:
 /*
@@ -89,12 +89,13 @@ console.log(secret)
 
 // 3.
 // DESCRIPTION
-// 
-// 
-// 
-//
+// we made variables called isStudent, age, and zip, and assigned their values
+// we made a conditional stating that if isStudent is true and the value of zip is greater than 8000, 'You're a student on the West Coast!' will be logged
+// if isStudent is false OR the value of age is less than 30, 'What are your hobbies?' will be logged
+// if isStuedent is true, 'Welcome to Prime!' will be logged
+// 'How about the weather?' will be logged if none of the other conditions fit
 // OUTCOME:
-//
+// 'Welcome to Prime!' will be logged
 
 // CODE:
 /*
@@ -155,10 +156,13 @@ if (number >= 2) {
 
 // CODE:
 /*
+// FIX - colorOne should be set to 'blue' 
+// FIX - colorTwo should be set to 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//FIX - we need to set both colorOne AND colorTwo to purple by adding colorTwo = 'purple' to the condition
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -176,6 +180,7 @@ if (mix === true) {
 // CODE:
 /*
 let temp = 40;
+// FIX - time shouild be a variable, so it would start with let instead of const
 const time = 4;
 
 if (temp > 39 || time >= 4) {
@@ -197,6 +202,7 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// FIX - no entry should only apply if minAge is less than age, so we should replace <= with <
 if(minAge <= age) {
   console.log('no entry');
 } else {
