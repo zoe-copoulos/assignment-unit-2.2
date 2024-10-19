@@ -136,9 +136,9 @@ if (isStudent === true && zip > 80000 ) {
 /*
 let number = 1;
 
-// FIX - number-- decrements number, but the instructions ask to increment. 
+// FIX - number-- decrements number, but the instructions ask to increment.
 // Should be number++.
-number--; 
+number--;
 
 if (number >= 2) {
   console.log('yes');
@@ -156,7 +156,7 @@ if (number >= 2) {
 
 // CODE:
 /*
-// FIX - colorOne should be set to 'blue' 
+// FIX - colorOne should be set to 'blue'
 // FIX - colorTwo should be set to 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -182,8 +182,9 @@ if (mix === true) {
 let temp = 40;
 // FIX - time shouild be a variable, so it would start with let instead of const
 const time = 4;
+// Above Fix isn't necessary, whoops
 
-if (temp > 39 || time >= 4) {
+if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -203,9 +204,19 @@ let age = 21;
 const minAge = 21;
 
 // FIX - no entry should only apply if minAge is less than age, so we should replace <= with <
-if(minAge <= age) {
-  console.log('no entry');
-} else {
+if(minAge <= age)
+
+// Noted what Dane said below re: this submission and how my above fix was not what you were looking for
+
+// For #6, the solution we were looking for is that the console logs are switched around.
+// When it says We check if age is greater than or equal to minAge this would be age >= minAge. However, this is equal to what the code has as minAge <= age
+
+// If you check both of them age is on the 'greater or equal' side of the equation. Put another way (A < B) is the same as (B > A)
+
   console.log('enter');
+} else {
+  console.log('no entry');
 }
 */
+
+// switched console logs to log correctly
